@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Cadastro</title>
+</head>
+
+<body>
+	
+	<div  id="principal">
+	<fieldset style="background-color: white;">
+	<legend><h1 style="font-family:verdana;background-color:#b8e6b9;color: black;">Agendamentos NewSQhair</h1></legend>
+		
+	<form action="AgendaNewSQhair.php"
+		  method="post"
+		  enctype="multipart/form-data">
+	Nome:
+		<input 	type="text"
+				name="nomeCliente"
+				required
+				maxlength="50"
+				size="50"
+				placeholder="Informe o seu nome">
+	<br>
+	Telefone:
+		<input 	type="text"
+				name="telefone"
+				required
+				maxlength="20"
+				size="20"
+				placeholder="Telefone de contato">
+	<br>
+	
+	Email:
+		<input 	type="text"
+				name="email"
+				required
+				maxlength="40"
+				size="40"
+				placeholder="Qual o seu e-mail?">
+	<br>
+	
+	<fieldset>
+	<legend>Ecolha a Unidade mais próxima:</legend>
+	<select name="unidades">
+		<option value="Qual a unidade?">Qual a unidade?</option>
+		<option value="Itaquera">Itaquera</option>
+		<option value="Tatuapé">Tatuapé</option>
+		<option value="Aricanduva">Aricanduva</option>
+		<option value="Vila Olimpia">Vila Olimpia</option>
+		<option value="Analia Franco">Analia Franco</option>
+		<option value="Alphaville">Alphaville</option>
+		<option value="Vila Matilde">Vila Matilde</option>
+				</select>
+	<br>
+	</fieldset>	
+	Data:
+	<select name="data">
+		<option value="Escolha o dia da semana">Escolha o dia da semana</option>
+		<option value="Segunda">Segunda</option>
+		<option value="Terça">Terça</option>
+		<option value="Quarta">Quarta</option>
+		<option value="Quinta">Quinta</option>
+		<option value="Sexta">Sexta</option>
+		<option value="Sábado">Sábado</option>
+		<option value="Domingo">Domingo</option>
+		</select>
+	<br>
+	Horário:
+	<select name="horario">
+		<option value="Horário">Horário</option>
+		<option value="09:00">09:00</option>
+		<option value="10:00">10:00</option>
+		<option value="11:00">11:00</option>
+		<option value="14:00">14:00</option>
+		<option value="15:00">15:00</option>
+		<option value="16:00">16:00</option>
+		<option value="17:00">17:00</option>
+		<option value="18:00">18:00</option>
+		<option value="19:00">19:00</option>
+		</select>
+	<br>
+	
+	Atendente:
+	<select name="atendente">
+		<option value="Sem preferencia">Sem preferencia</option>
+		<option value="Beatriz">Beatriz</option>
+		<option value="Ericlis">Ericlis</option>
+		<option value="Joyce">Joyce</option>
+		<option value="João">João</option>
+		<option value="Renato">Renato</option>
+		<option value="Ananda">Ananda</option>
+		<option value="Carolina">Carolina</option>
+				</select>
+	<br>
+		Tipo de Serviço:
+  	<select name="servico">
+		<option value="Serviços disponiveis">Serviços disponiveis</option>
+		<option value="Chapa">Chapa</option>
+		<option value="Depilação">Depilação</option>
+		<option value="Esmaltar">Esmaltar</option>
+		<option value="Escova modelada">Escova modelada</option>
+		<option value="Depilação">Depilação</option>
+		<option value="Hidratação">Hidratação</option>
+		<option value="BobyLiss">BobyLiss</option>
+		<option value="Limpeza de pele">Limpeza de pele</option>
+		<option value="Maquiagem">Maquiagem</option>
+		<option value="Sobrancelha">Sobrancelha</option>
+		<option value="Coloração completa">Coloração completa</option>
+		<option value="Manicure">Manicure</option>
+		<option value="Outros">Outros</option>
+				</select>
+	<br>
+	Convênio:
+		<input type="radio" name="convenio" value="S"> Sim
+		<input type="radio" name="convenio" value="N" checked> Não
+	<br>
+	<hr>
+		<input type="submit" value="Agendar">
+		
+	</form>
+	</fieldset>
+	</div>
+</body>
+<script src="script.js"></script>
+
+</html>

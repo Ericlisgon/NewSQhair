@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&family=Josefin+Slab:ital,wght@0,300;0,400;1,200;1,300;1,400&family=Mulish:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css");
+
+
+.fieldset {
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+body {
+    font-size: italic;
+    background: #000000;
+    opacity: 0.5;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 4px 4px 10px rgba(2, 2, 2, 0.856);
+    border-radius: 2rem;
+}
+
+button submit {
+    align-items: center;
+    font-family: italic;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background: #cb2d3e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
